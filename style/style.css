@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-color: #4154f1;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(51, 51, 51);
+  border-radius: 5rem;
+}
+
+/* ---------------------------- Universal Classes */
+
+img {
+  width: 100%;
+}
+
+.py-10 {
+  padding: 100px 0;
+}
+
+/* --------------------------- header */
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+}
+
+header .navbar-brand img {
+  width: 160px;
+}
+
+header .menu-icon i {
+  color: #000000;
+  font-size: 20px;
+}
+
+header .menu-icon {
+  cursor: pointer;
+}
+
+header .menu-links a {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px;
+  font-weight: 600;
+  position: relative;
+}
+
+header .menu-links a:hover {
+  color: var(--primary-color) !important;
+}
+
+header .menu-links a:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  border-radius: 100px;
+  left: 0;
+  top: 100%;
+  right: 0;
+  margin: 0 auto;
+  transition: all.25s ease-in-out;
+  background-color: var(--primary-color);
+}
+
+header .menu-links a:hover:before {
+  width: 60%;
+}
+
+.hamburger {
+  background-color: var(--primary-color);
+  width: 80%;
+  height: 80vh;
+  border-radius: 1rem;
+  padding: 50px;
+  margin: 0 auto;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  /* display: none; */
+}
+
+.hamburger .cls-btn {
+  bottom: 105%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburger .cls-btn i {
+  font-size: 16px;
+}
+
+.hamburger .menu-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hamburger .menu-links a {
+  font-size: 1.5rem;
+}
+
+/* ---------------------------------Banner section */
+.hero {
+  background-image: url(../assets/banner-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 46px;
+  color: var(--primary-color);
+}
+
+.hero h2 + p {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hero h2 + p + button {
+  padding: 10px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero h2 + p + button:focus {
+  box-shadow: none;
+}
+
+.hero h2 + p + button i {
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero h2 + p + button:hover i {
+  margin-left: 14px;
+}
