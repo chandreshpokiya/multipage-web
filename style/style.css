@@ -160,3 +160,70 @@ header .menu-links a:hover:before {
 .hero h2 + p + button:hover i {
   margin-left: 14px;
 }
+
+/* ------------------------------ Footer Section */
+
+footer {
+  background: url(../assets/footer-bg.png) no-repeat right top;
+}
+
+footer .footer-top .footer-logo img {
+  width: 160px;
+}
+
+footer .footer-top .footer-logo + p {
+  font-size: 14px;
+}
+
+footer .footer-top .footer-social a {
+  font-size: 20px;
+  color: #8094b7;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-top .footer-social a:hover {
+  color: var(--primary-color);
+}
+
+footer .footer-top h4 {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+footer .footer-top ul i {
+  color: #8094b7;
+}
+
+footer .footer-top .footer-contact p {
+  font-size: 14px;
+}
+
+footer .footer-bottom {
+  background-color: #f6f9ff;
+}
+
+/* ----------------------- Scroll To Top Button */
+
+.scrollTop {
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  z-index: 99999999999;
+}
+
+.scrollTop:hover {
+  transform: scale(1);
+  background-color: #6d7cfd;
+}
+
+.scrollTop i {
+  color: #fff;
+  font-size: 20px;
+}
