@@ -7,6 +7,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 :root {
   --primary-color: #4154f1;
 }
@@ -37,7 +41,7 @@ img {
 /* --------------------------- header */
 
 header {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
   z-index: 9;
@@ -55,6 +59,12 @@ header .menu-icon i {
 
 header .menu-icon {
   cursor: pointer;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+header .menu-icon.hide {
+  opacity: 0;
 }
 
 header .menu-links a {
@@ -90,15 +100,25 @@ header .menu-links a:hover:before {
 }
 
 .hamburger {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: rgba(0, 0, 0, 0.5);
   width: 80%;
   height: 80vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateY(-120%);
   border-radius: 1rem;
   padding: 50px;
   margin: 0 auto;
   z-index: 100;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   /* display: none; */
+}
+
+.hamburger.show {
+  transform: translateX(0);
+  box-shadow: 0px 0px 29px 7px rgba(0, 0, 0, 0.3);
 }
 
 .hamburger .cls-btn {
