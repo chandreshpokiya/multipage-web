@@ -75,10 +75,11 @@ header .menu-links a {
   margin: 0 10px;
   font-weight: 600;
   position: relative;
+  color: var(--primary-color) !important;
 }
 
 header .menu-links a:hover {
-  color: var(--primary-color) !important;
+  /* color: var(--primary-color) !important; */
 }
 
 header .menu-links a:before {
@@ -100,13 +101,14 @@ header .menu-links a:hover:before {
 }
 
 .hamburger {
-  /* background-color: var(--primary-color); */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-color);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   width: 80%;
   height: 80vh;
   position: fixed;
-  top: 0;
+  left: 0;
   right: 0;
+  margin: 0 auto;
   transform: translateY(-120%);
   border-radius: 1rem;
   padding: 50px;
@@ -114,6 +116,21 @@ header .menu-links a:hover:before {
   z-index: 100;
   transition: all 0.2s ease-in-out;
   /* display: none; */
+}
+
+.hamburger a {
+  position: relative;
+}
+
+.hamburger a:before {
+  content: "asdasd";
+  height: 2px;
+  width: 80%;
+  background-color: #fff !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
 }
 
 .hamburger.show {
@@ -144,6 +161,7 @@ header .menu-links a:hover:before {
 
 .hamburger .menu-links a {
   font-size: 1.5rem;
+  color: #fff !important;
 }
 
 /* ---------------------------------Banner section */
