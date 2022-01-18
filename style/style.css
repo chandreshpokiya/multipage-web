@@ -38,7 +38,40 @@ img {
   padding: 100px 0;
 }
 
-/* --------------------------- header */
+.heading .title {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--primary-color);
+  position: relative;
+  display: block;
+}
+
+.heading .title::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 50px;
+  width: 90px;
+  background-color: var(--primary-color);
+}
+
+.heading .subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------End Universal Classes */
+
+/* --------------------------- Start Header Section */
 
 header {
   /* position: absolute; */
@@ -76,10 +109,6 @@ header .menu-links a {
   font-weight: 600;
   position: relative;
   color: var(--primary-color) !important;
-}
-
-header .menu-links a:hover {
-  /* color: var(--primary-color) !important; */
 }
 
 header .menu-links a:before {
@@ -164,7 +193,9 @@ header .menu-links a:hover:before {
   color: #fff !important;
 }
 
-/* ---------------------------------Banner section */
+/* ------------------------- End Header Section */
+
+/* --------------------------Start Banner section */
 .hero {
   background-image: url(../assets/banner-bg.png);
   background-size: cover;
@@ -181,25 +212,76 @@ header .menu-links a:hover:before {
   font-weight: 600;
 }
 
-.hero h2 + p + button {
+.hero a {
+  background-color: var(--primary-color);
   padding: 10px 24px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -5px var(--primary-color);
 }
 
-.hero h2 + p + button:focus {
+.hero h2 + p + a:focus {
   box-shadow: none;
 }
 
-.hero h2 + p + button i {
+.hero h2 + p + a i {
   margin-left: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.hero h2 + p + button:hover i {
+.hero h2 + p + a:hover i {
   margin-left: 14px;
 }
 
-/* ------------------------------ Footer Section */
+/* ------------------------------ End Banner Section */
+
+/* ---------------------------Start About Us Section */
+
+.about .about-content {
+  background-color: #f2f5fc;
+}
+
+.about .about-content h5 {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.about .about-content h3 {
+  font-weight: 700;
+  color: #081797;
+  font-size: 24px;
+}
+
+.about .about-content a {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: 0px 0px 30px -5px var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.about .about-content a i {
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about .about-content a:hover i {
+  margin-left: 14px;
+}
+
+.aboutpage-head {
+  background-color: #f2f5fc;
+}
+
+.aboutpage-head h3 {
+  line-height: 40px;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+/* ---------------------------End About Us Section */
+
+/* ------------------------------ Start Footer Section */
 
 footer {
   background: url(../assets/footer-bg.png) no-repeat right top;
@@ -240,6 +322,8 @@ footer .footer-bottom {
   background-color: #f6f9ff;
 }
 
+/* -------------------------------End Footer Section */
+
 /* ----------------------- Scroll To Top Button */
 
 .scrollTop {
@@ -254,6 +338,7 @@ footer .footer-bottom {
   transition: all 0.2s ease-in-out;
   display: flex;
   z-index: 99999999999;
+  box-shadow: 0 0 10px -5px var(--primary-color);
 }
 
 .scrollTop:hover {
