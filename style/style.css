@@ -331,6 +331,37 @@ header .menu-links a:hover:before {
   background-color: var(--primary-color);
 }
 
+.employee .emp-img img {
+  transition: all 0.3s ease-in-out;
+}
+
+.employee .emp-img:hover img {
+  transform: scale(1.05);
+}
+
+.employee .emp-content {
+  background-color: #f2f5fc;
+}
+
+.employee .emp-pros li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.employee .emp-pros li::before {
+  content: "\f560";
+  position: absolute;
+  color: var(--primary-color);
+  top: 0;
+  left: -30px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.employee .emp-pros li i {
+  margin-right: 20px;
+}
+
 /* ---------------------------End About Us Section */
 
 /* ------------------------------ Start Footer Section */
