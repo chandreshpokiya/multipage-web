@@ -279,6 +279,58 @@ header .menu-links a:hover:before {
   font-weight: 800;
 }
 
+#team .team-img {
+  width: 140px;
+}
+
+#team .team-img img {
+  transition: all 0.3s ease-in-out;
+}
+
+#team .team-img:hover img {
+  transform: scale(1.1);
+}
+
+#team .team-card {
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.08);
+}
+
+#team .team-card h4 {
+  font-weight: 900;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#team .team-card h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#team .team-card p {
+  font-size: 14px;
+}
+
+#team .team-card .team-social-icon a {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#team .team-card .team-social-icon a:hover {
+  background-color: var(--primary-color);
+}
+
 /* ---------------------------End About Us Section */
 
 /* ------------------------------ Start Footer Section */
