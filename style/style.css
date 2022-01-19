@@ -364,6 +364,40 @@ header .menu-links a:hover:before {
 
 /* ---------------------------End About Us Section */
 
+/* ----------------------------Start Feature Section */
+
+.feature .feature-inner-card h3 {
+  color: var(--primary-color);
+}
+
+.feature .btn {
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.feature .btn:hover {
+  box-shadow: 0px 0px 30px -5px var(--primary-color);
+}
+
+.feature .btn i {
+  margin-left: 5px;
+}
+
+/* ----------------------------End Feature Section */
+
+/* -----------------------------Start Service Section */
+
+#service .service-card {
+  background-color: #f2f5fc;
+}
+
+#service .service-card .card-icon i {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+/* -----------------------------End Service Section */
+
 /* ------------------------------ Start Footer Section */
 
 footer {
