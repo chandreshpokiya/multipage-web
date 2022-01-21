@@ -38,7 +38,6 @@ img {
   padding: 100px 0;
 }
 
-
 .heading .title {
   font-weight: 700;
   text-align: center;
@@ -517,6 +516,161 @@ header .menu-links a:hover:before {
 }
 
 /* ----------------------------------End FAQs Section */
+
+/* -----------------Start Blog Section */
+
+.blog-card {
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.blog-card .blog-body p {
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(65, 84, 241, 0.7);
+}
+
+.blog-card .blog-body .blog-title {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.blog-card .blog-body a {
+  color: var(--primary-color);
+}
+
+.blog-card .blog-body a:focus {
+  box-shadow: none !important;
+}
+
+
+.blog-card img{
+  object-position: center;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+.blog-card:hover img{
+  transform: scale(1.06);
+}
+
+.blog-page .blog-card .blog-body .blog-details p {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.blog-page .blog-card .blog-body .blog-details + p{
+  text-transform: inherit;
+  font-weight: 600;
+  color: #101010;
+}
+
+.blog-btn a{
+  background-color: var(--primary-color);
+  
+}
+
+.search-box .input-group a{
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.search-box input:focus{
+  box-shadow: none !important;
+}
+
+.search-box h6{
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.search-box .categories-link a{
+  color: var(--primary-color);
+}
+
+.search-box .categories-link a span{
+  color: rgba(0, 0, 0, .5);
+}
+
+.notification{
+  background-color: rgb(242,245,252);
+}
+
+.notification h5{
+  text-align: center;
+  font-size: 32px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.notification h5+p{
+  font-size: 14px;
+}
+
+.notification .input-group{
+  max-width: 600px;
+}
+
+.notification .input-group input:focus{
+  box-shadow: none !important;
+}
+
+.notification .input-group a{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* -----------------End Blog Section */
+
+/* -------------------Start Contact section */
+
+.contact .location .location-icon{
+  height: 50px;
+  width: 50px;
+  background-color: RGB(242,245,252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.contact .location .location-details h5{
+  font-weight: 700;
+}
+
+.contact .email .email-icon{
+  height: 50px;
+  width: 50px;
+  background-color: RGB(242,245,252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.contact .email .email-details h5{
+  font-weight: 700;
+}
+
+.contact .phone .phone-icon{
+  height: 50px;
+  width: 50px;
+  background-color: RGB(242,245,252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.contact .phone .phone-details h5{
+  font-weight: 700;
+}
+
+/* -------------------End Contact section */
 
 /* ------------------------------ Start Footer Section */
 
