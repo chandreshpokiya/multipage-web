@@ -1,6 +1,14 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .faq .accordian-container {
     max-width: 90% !important;
+  }
+  .client-imgs .row div {
+    padding: 50px;
+  }
+
+  .client-imgs .row div img{
+    width: 50%;
+    margin: auto;
   }
 }
 

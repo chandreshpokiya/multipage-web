@@ -38,6 +38,7 @@ img {
   padding: 100px 0;
 }
 
+
 .heading .title {
   font-weight: 700;
   text-align: center;
@@ -503,9 +504,16 @@ header .menu-links a:hover:before {
   max-width: 70%;
   margin: 0 auto;
 }
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
 
-.faq .accordian-container .accordian-button:focus {
-  box-shadow: none !important;
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: transparent;
 }
 
 /* ----------------------------------End FAQs Section */
