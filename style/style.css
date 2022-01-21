@@ -546,14 +546,13 @@ header .menu-links a:hover:before {
   box-shadow: none !important;
 }
 
-
-.blog-card img{
+.blog-card img {
   object-position: center;
   object-fit: cover;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.blog-card:hover img{
+.blog-card:hover img {
   transform: scale(1.06);
 }
 
@@ -562,64 +561,63 @@ header .menu-links a:hover:before {
   font-weight: 600;
 }
 
-.blog-page .blog-card .blog-body .blog-details + p{
+.blog-page .blog-card .blog-body .blog-details + p {
   text-transform: inherit;
   font-weight: 600;
   color: #101010;
 }
 
-.blog-btn a{
+.blog-btn a {
   background-color: var(--primary-color);
-  
 }
 
-.search-box .input-group a{
+.search-box .input-group a {
   color: #fff;
   background-color: var(--primary-color);
 }
 
-.search-box input:focus{
+.search-box input:focus {
   box-shadow: none !important;
 }
 
-.search-box h6{
+.search-box h6 {
   color: var(--primary-color);
   font-weight: 800;
   font-size: 20px;
 }
 
-.search-box .categories-link a{
+.search-box .categories-link a {
   color: var(--primary-color);
 }
 
-.search-box .categories-link a span{
-  color: rgba(0, 0, 0, .5);
+.search-box .categories-link a span {
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.notification{
-  background-color: rgb(242,245,252);
+.notification {
+  background-color: rgb(242, 245, 252);
 }
 
-.notification h5{
+.notification h5 {
   text-align: center;
   font-size: 32px;
   color: var(--primary-color);
   font-weight: 900;
 }
 
-.notification h5+p{
+.notification h5 + p {
   font-size: 14px;
 }
 
-.notification .input-group{
+.notification .input-group {
   max-width: 600px;
 }
 
-.notification .input-group input:focus{
+.notification .input-group input:focus {
   box-shadow: none !important;
 }
 
-.notification .input-group a{
+.notification .input-group a {
   background-color: var(--primary-color);
   color: white;
 }
@@ -628,47 +626,63 @@ header .menu-links a:hover:before {
 
 /* -------------------Start Contact section */
 
-.contact .location .location-icon{
+.contact .location .location-icon {
   height: 50px;
   width: 50px;
-  background-color: RGB(242,245,252);
+  background-color: RGB(242, 245, 252);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 
-.contact .location .location-details h5{
+.contact .location .location-details h5 {
   font-weight: 700;
 }
 
-.contact .email .email-icon{
+.contact .email .email-icon {
   height: 50px;
   width: 50px;
-  background-color: RGB(242,245,252);
+  background-color: RGB(242, 245, 252);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 
-.contact .email .email-details h5{
+.contact .email .email-details h5 {
   font-weight: 700;
 }
 
-.contact .phone .phone-icon{
+.contact .phone .phone-icon {
   height: 50px;
   width: 50px;
-  background-color: RGB(242,245,252);
+  background-color: RGB(242, 245, 252);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 
-.contact .phone .phone-details h5{
+.contact .phone .phone-details h5 {
   font-weight: 700;
 }
+
+.contact button {
+  background-color: var(--primary-color);
+  display: inline-block;
+  color: white;
+}
+.contact button:hover {
+  color: white;
+}
+
+.contact input:focus,
+.contact textarea:focus
+ {
+  box-shadow: none !important;
+}
+
 
 /* -------------------End Contact section */
 
