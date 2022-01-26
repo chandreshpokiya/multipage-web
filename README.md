@@ -1,7 +1,7 @@
 # multipage-web
 Best example for beginners. multipage website with full responsive. 
 
-<!-- ## Live Preview: [Open Link](https://hardcoresolution.netlify.app/) -->
+## Live Preview: [Open Link](https://hardcoreexample.netlify.app/)
 
 Coded by - [Chandresh Pokiya](https://www.linkedin.com/in/chandresh-pokiya-1950751b7)
 
