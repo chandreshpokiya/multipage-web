@@ -7,6 +7,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+*::selection{
+  background: rgb(201 201 201);
+}
+
 html {
   overflow-x: hidden;
 }
